@@ -1,0 +1,73 @@
+body { 
+    font-family: sans-serif;
+    margin: 20px;
+    background: #f7f7f7; 
+    color: #222; 
+}
+.container { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    background: white; 
+    padding: 20px; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
+    border-radius: 8px;
+}
+
+/* Espaciado y estilo del título principal */
+.container > h1 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.top { 
+    display:flex; 
+    gap:20px; 
+}
+
+.task-form { 
+    width: 320px; 
+    display:flex; 
+    flex-direction:column; 
+    gap:8px; 
+}
+
+.task-form input, .task-form textarea, .filters input, .filters select { 
+    padding:8px; 
+    border:1px solid #ccc; 
+    border-radius:4px; 
+}
+
+.task-list { 
+    margin-top: 12px; 
+}
+
+.card + .card {
+    margin-top: 1rem;
+}
+
+/* Pequeños ayudantes visuales para filas de la tabla */
+.table tbody tr.table-success {
+    background-color: #e6ffed !important;
+}
+.table-responsive {
+    margin-top: 0.5rem;
+}
+.actions { 
+    margin-top:8px; 
+}
+.error { 
+    color: #a00; 
+    margin-top:8px; 
+}
+.filters { 
+    display:flex; 
+    flex-direction:column; 
+    gap:8px; 
+}
+.filters input, .filters select { 
+    width: 220px; 
+}
+.meta { 
+    font-size: 0.85rem; 
+    color:#555; 
+}
